@@ -1,0 +1,12 @@
+﻿@page
+@using TEST1234.Lib;
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+    var data = new Data() { Title = "Privacy", Number = 255 };
+    <h1>@ViewData["Title"]</h1>
+    }
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+<partial name ="shared/index" model="data"/>
